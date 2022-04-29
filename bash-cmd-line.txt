@@ -1,0 +1,215 @@
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 ~
+$ git log
+fatal: not a git repository (or any of the parent directories): .git
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 ~
+$ cd /c/2-Platform-Stud/1-FULLSTACK
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK (main)
+$ git log
+fatal: your current branch 'main' does not have any commits yet
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK (main)
+$ cd 07-git-story/
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git log
+fatal: your current branch 'main' does not have any commits yet
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git login
+git: 'login' is not a git command. See 'git --help'.
+
+The most similar command is
+        column
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git init
+Reinitialized existing Git repository in C:/2-Platform-Stud/1-FULLSTACK/07-git-story/.git/
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git add chapter1.txt
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git commit -m "Complete Chapter 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'MITS-Prajyot@ASUS-TUF-F15.(none)')
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ ^C
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git config --global user.email "prajyotjawake21@gmail.com"
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ ^C
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git config --global user.name "Your Name"
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git config --global user.name "PrajyotCJ"
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git commit -m "Complete Chapter 1"
+[main (root-commit) 5a8fc14] Complete Chapter 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter1.txt
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git log
+commit 5a8fc1434722470a477fb1a65c474c732a892fa3 (HEAD -> main)
+Author: PrajyotCJ <prajyotjawake21@gmail.com>
+Date:   Fri Apr 29 16:11:56 2022 +0530
+
+    Complete Chapter 1
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ touch chapter2.txt
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ touch chapter3.txt
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt
+        chapter3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git add .
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git commit -m "Complete Chapter 2 and 3"
+[main d13189f] Complete Chapter 2 and 3
+ 2 files changed, 2 insertions(+)
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git log
+commit d13189f30c15374ba733935cb6e73118cfb8d487 (HEAD -> main)
+Author: PrajyotCJ <prajyotjawake21@gmail.com>
+Date:   Fri Apr 29 16:34:18 2022 +0530
+
+    Complete Chapter 2 and 3
+
+commit 5a8fc1434722470a477fb1a65c474c732a892fa3
+Author: PrajyotCJ <prajyotjawake21@gmail.com>
+Date:   Fri Apr 29 16:11:56 2022 +0530
+
+    Complete Chapter 1
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index e80b256..cb5b794 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1 @@
+-chapter 3333 is created now for update
+\ No newline at end of file
++nljg;jljglkadrjlkgmsdlkl; dflnglkdns bdsgnl;ad bsd h 'slg
+\ No newline at end of file
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git checkout chapter3,txt
+error: pathspec 'chapter3,txt' did not match any file(s) known to git
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
+$ git checkout chapter3.txt
+Updated 1 path from the index
+
+MITS-Prajyot@ASUS-TUF-F15 MINGW64 /c/2-Platform-Stud/1-FULLSTACK/07-git-story (main)
